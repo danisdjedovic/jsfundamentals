@@ -47,4 +47,19 @@ function filterBlueObjects(items) {
   }
 }
 
-filterBlueObjects(items);
+const resistors = [
+  { name: "R1", resistance: 10 },
+  { name: "R2", resistance: 40 },
+  { name: "R3", resistance: 20 },
+  { name: "R4", resistance: 5 },
+];
+
+function getTotalResistance(resistors) {
+  totalR = 0;
+  for (const R of resistors) {
+    totalR += R.resistance;
+  }
+  return totalR;
+}
+
+console.log(getTotalResistance(resistors));
