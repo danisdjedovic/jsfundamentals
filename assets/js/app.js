@@ -14,4 +14,12 @@ function getTotalPriceOfCartItems(cart) {
   return sum;
 }
 
-console.log(getTotalPriceOfCartItems(cart));
+function getQuantityOfCartItems(cart) {
+  let sum = 0;
+  for (let i = 0; i < cart.length; i++) {
+    sum += cart[i].quantity;
+  }
+  return sum;
+}
+
+console.log(getQuantityOfCartItems(cart));
