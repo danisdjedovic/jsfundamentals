@@ -22,4 +22,16 @@ function getQuantityOfCartItems(cart) {
   return sum;
 }
 
-console.log(getQuantityOfCartItems(cart));
+const numbers = [1, 34, 21, 97, 102, 25];
+
+function findBiggestNumber(numbers) {
+  let biggestNumber = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > biggestNumber) {
+      biggestNumber = numbers[i];
+    }
+  }
+  return biggestNumber;
+}
+
+console.log(findBiggestNumber(numbers));
