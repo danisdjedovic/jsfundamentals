@@ -34,4 +34,17 @@ function findBiggestNumber(numbers) {
   return biggestNumber;
 }
 
-console.log(findBiggestNumber(numbers));
+const items = [
+  { name: "Lopta", color: "red" },
+  { name: "Stol", color: "blue" },
+  { name: "Daska", color: "blue" },
+  { name: "Pernica", color: "white" },
+];
+
+function filterBlueObjects(items) {
+  for (const item of items) {
+    if (item.color === "blue") console.log(item);
+  }
+}
+
+filterBlueObjects(items);
