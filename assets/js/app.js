@@ -55,11 +55,29 @@ const resistors = [
 ];
 
 function getTotalResistance(resistors) {
-  totalR = 0;
+  lettotalR = 0;
   for (const R of resistors) {
     totalR += R.resistance;
   }
   return totalR;
 }
 
-console.log(getTotalResistance(resistors));
+const drinks = [
+  { name: "Mojito", price: 20 },
+  { name: "Coke", price: 2 },
+  { name: "Hot Chocolate", price: 5 },
+  { name: "Wine", price: 150 },
+];
+
+function softDrinks(drinks) {
+  for (let i = 0; i < drinks.length - 1; i++) {
+    if (drinks[i].price > drinks[i + 1].price) {
+      let temp = drinks[i];
+      drinks[i] = drinks[i + 1];
+      drinks[i + 1] = temp;
+    }
+  }
+  return drinks;
+}
+
+console.log(softDrinks(drinks));
