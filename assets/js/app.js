@@ -88,4 +88,14 @@ function paths(places) {
   return paths;
 }
 
-console.log(paths(4));
+const numbers2 = [2, 324, 23, 5, 1, 7, 56, 32, 2];
+
+function sevenBoom(numbers2) {
+  if (numbers2.includes(7)) {
+    return "Boom!";
+  } else {
+    return "Nema 7";
+  }
+}
+
+console.log(sevenBoom(numbers2));
