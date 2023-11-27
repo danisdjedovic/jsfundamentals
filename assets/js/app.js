@@ -80,4 +80,12 @@ function softDrinks(drinks) {
   return drinks;
 }
 
-console.log(softDrinks(drinks));
+function paths(places) {
+  let paths = 1;
+  for (let i = 1; i < places + 1; i++) {
+    paths *= i;
+  }
+  return paths;
+}
+
+console.log(paths(4));
